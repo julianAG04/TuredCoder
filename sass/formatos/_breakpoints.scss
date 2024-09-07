@@ -1,0 +1,51 @@
+
+@media screen and (max-width: 576px) {
+    #footer{
+        flex-direction: column;
+    }
+    .formulario__texto-empresa , .formulario__texto-estudiante{
+        font-size: 20px;
+    }
+    .formulario__ingresar-estudiante input{
+        margin-left: 0px;
+        height: 25px;
+        border-radius: 7px;
+    }
+    .formulario__ingresar-empresa input{
+        margin-left: 0px;
+        height: 25px;
+        border-radius: 7px;
+    }
+    .formulario__btn-empresayestudiante button {
+        font-size: 20px;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 30px;
+        margin: 5px 5px;
+    }
+    #form{
+        flex-direction: column;
+    }
+    .form-contenido_relleno {
+        padding: 10px;
+        justify-content: space-around;
+        align-content: space-around;
+        font-size: 15px;
+    }
+    .form-contenido_relleno input {
+        margin-left: 30px;
+        height:35px;
+    }
+    .form-contenido_relleno textarea{
+        margin-left: 30px;
+        height: 60px;
+    }
+    .form_redes {
+        margin-top: 20px;
+        align-items: center;
+        width: 100%;
+    }
+    .texto_seguinos{
+        font-size: 30px;
+    }
+}

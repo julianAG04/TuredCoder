@@ -12,6 +12,7 @@
 }
 .footer__redes{
     transition: 1s;
+    
 }
 .footer__redes :hover{
     filter: drop-shadow(10px 10px 6px rgb(200, 135, 207));
@@ -20,7 +21,7 @@
 .footer__redes_email , .footer__redes_instagram{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
     justify-content: center;
 }
 .footer__redes-gmail , .footer__redes-insta {

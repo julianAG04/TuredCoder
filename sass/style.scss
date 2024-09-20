@@ -8,312 +8,34 @@
 @import "formatos/footer";
 
 /* PAGE INGRESAR */
+@import "ingresar/page-ingresar";
 
 /* PAGE REGISTRARSE */
+@import "registrarse/page-registrarse";
 
 /* PAGE NOSOTROS */
+@import "nosotros/page-nosotros";
 
 /* PAGE CONTACTO */
+@import "contacto/page-contacto";
 
 
-/* el asterico indica a todo el documento FORMATEO BASICO DE LA PAGINA WEB */
-
-/* ESTILOS NAVBAR / HEADER */
-#body {
-    max-width: 1920px;
-    background-color: white;
-}
-.container-fluid{
-    background-color: white;
-}
-.navbar-nav {
-    font-size: 25px;
-    color: black;
-    transition: 1s;
-}
-.navbar-nav :hover {
-    transition: 1s;
-    font-size: 30px;
-    color: rgb(64, 169, 255);
-}
-.navbar-brand{
-    transition: 1s;
-    object-fit: cover;
-}
-.navbar-brand :hover{
-    transition: 1s;
-    transform:scale(1.2) ;
-}
-.carousel-item img{
-    height: 100vh;
-}
-
-#main{
-    max-width: 100%;
-    min-height: 100vh; /* aca se le pide que se ajuste al 100 porciento visible, para separar el main del footer */
-    background-color: white ;
-}
-
-.main__inicio__img-inicio{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-content: center;
-}
-
-/* ESTILO PARA INGRESAR */
-#formulario__ingresar{
-    display: flex;
-    width: 80%;
-    height: 60vh;
-    margin: 0 auto;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 30px;
-    align-content:  center;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-}
-.formulario__ingresar-empresa , .formulario__ingresar-estudiante{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    height: 100%;
-    padding: 20px;
-    justify-content: space-between;
-}
-.formulario__ingresar-estudiante input{
-    margin-left: 80px;
-    height: 35px;
-    border-radius: 7px;
-}
-.formulario__ingresar-empresa input{
-    margin-left: 80px;
-    height: 35px;
-    border-radius: 7px;
-}
-.formulario__btn-estudiante , .formulario__btn-empresa  {
-    width: 80px;
-    height: 40px;
-    border-radius: 20px;
-    right: 20px;
-    bottom: 20px;
-}
-.formulario__ingresar-empresa{
-    display: flex;
-    background-color: hsl(206, 81%, 61%);
-    align-content: space-around;
-    transition: 0.5s;
-}
-.formulario__ingresar-empresa:hover{
-    transition: 0.5s;
-    background-color:hsl(206, 35%, 52%); ;
-}
-.formulario__ingresar-estudiante{
-    display: flex;
-    background-color: rgb(241, 241, 192);
-    transition: 0.5s;
-}
-.formulario__ingresar-estudiante:hover{
-    transition: 0.5s;
-    background-color: rgb(189, 189, 143);
-}
-.main__textobienvenida{
-    text-align: center;
-    font-size: 60px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    align-content:  space-evenly;
-    text-align: center;
-    justify-content: center;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    transition: 2s;
-    color: black;
-}
-.main__textobienvenida:hover{
-    transition: 2s;
-    font-size: 80px;
-    color: rgb(54, 191, 255);
-}
-
-.formulario__texto-estudiante , .formulario__texto-empresa {
-    text-align: center;
-}
+$borde-externo:border-radius 20px;
+$borde-interno:border-radius 10px;
+$borde-botones:border-radius 7px;
 
 
-/* ESTILO PARA PAGE REGISTRARSE */
-#main__formulario-ingresar{
-    flex-direction: column;
-    display: flex;
-    width: 80%;
-    height: 100vh;
-    background-color: rgb(227, 227, 175);
-    border: none;
-    border-radius: 30px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    text-transform: uppercase;
-}
-.formulario__texto{
-    font-size: 50px;
-    letter-spacing: 5px;
-    font-weight: bold;
-    }
-.formulario__btn-empresayestudiante{
-    display: flex;
-    flex-direction: row;
-}
-.formulario__btn-empresayestudiante button {
-    font-size: 20px;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 30px;
-    margin: 40px 80px;
-}
-.btn-estudiante button {
-    color: #FFFFFF;
-    background-color: #0074e8f3
-
-}
-.btn-estudiante button:hover{
-    background-color: #FFFFFF;
-    color: #0074e8f3;
-    transition: 1s;
-    font-size: 20px;
-    font-weight: bold
-}
-.btn-empresa button {
-    color: #FFFFFF;
-    background-color: #4c8d67f3
-
-}
-.btn-empresa button:hover{
-    background-color:#FFFFFF ;
-    color:#4c8d67f3 ;
-    transition: 1s;
-    font-size: 20px;
-    font-weight: bold
-}
 
 
-/* ESTILO PAGE NOSOTROS */
-.main__titulo-nosotros , .main__imagen-nosotros , .main__texto-nosotros{
-    text-align: center;
-    margin: 0 auto;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    background-color: rgb(204, 236, 250);
-    border: none;
-    border-radius: 10px;
-}
-
-.main__titulo-nosotros{
-    font-size: 50px;
-    letter-spacing: 5px;
-    font-weight: bold;
-    padding: 20px 1px 20px 1px;
-}
-
-.main__texto-nosotros{
-    font-size: 25px;
-    padding: 10px 10px 10px 10px;
-}
 
 
-/* ESTILO PARA PAGE CONTACTO */
-/* FORMULARIO CONTACTO */
-#form{
-    display: flex;
-    width: 80%;
-    height: 100vh;
-    margin: 0 auto;
-    background-color: rgb(169, 202, 240);
-    border: none;
-    border-radius: 30px;
-    align-content:  center;
-    justify-content: center;
-    align-items: center;
-}
 
-/*ESTILOS DE RELLENO/CONTENIDO = INPUTS Y LABELS DEL FORM*/
-.form_contenido {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 100%;
-}
 
-.form-contenido_relleno {
-    height: 100%;
-    padding: 20px 50px 20px 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: space-around;
-    font-size: 18px;
-}
 
-.form-contenido_relleno input {
-    margin-left: 50px;
-    height: 55px;
-    border-radius: 10px;
-}
 
-/*FORM CONTENIDO CAMPO TEXTAREA*/
-.form-contenido_relleno textarea {
-    resize: none;
-    height: 100px;
-    margin-left: 60px;
-    border-radius: 10px;
 
-}
 
-/*FORM CONTENIDO BTN ENVIAR*/
-.form-contenido_btnEnv {
-    width: 80px;
-    height: 45px;
-    margin-left: auto;
-    margin-right: 50px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
 
-/*ESTILOS DE RELLENO DE ÍCONOS*/
-.form_redes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    gap: 30px;
-    font-size: 35px;
-}
-
-.texto_seguinos{
-    font-size: 35px;
-}
-
-.seccion_iconos{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
-
-}
-.seccion_redes_mail{
-    padding: 20px ;
-}
-.seccion_redes_instagram{
-    padding: 20px;
-}
-.seccion_redes_whatsapp{
-    padding: 20px;
-}
 
 
 

@@ -66,6 +66,54 @@ ul, li {
   }
 }
 /* estilos HTML */
+/* ESTILOS NAVBAR / HEADER */
+.navbar-nav {
+  font-size: 25px;
+  color: black;
+  transition: 1s;
+}
+
+.navbar-nav :hover {
+  transition: 1s;
+  font-size: 30px;
+  color: rgb(64, 169, 255);
+}
+
+.navbar-brand {
+  transition: 1s;
+  object-fit: cover;
+}
+
+.navbar-brand :hover {
+  transition: 1s;
+  transform: scale(1.2);
+}
+
+.carousel-item img {
+  height: 100vh;
+}
+
+.container-fluid {
+  background-color: white;
+}
+
+#body {
+  max-width: 1920px;
+  background-color: white;
+}
+
+#main {
+  max-width: 100%;
+  min-height: 100vh; /* aca se le pide que se ajuste al 100 porciento visible, para separar el main del footer */
+  background-color: white;
+}
+#main .main__inicio__img-inicio {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-content: center;
+}
+
 /* ESTILOS FOOTER */
 #footer {
   width: 100%;
@@ -112,126 +160,7 @@ ul, li {
 }
 
 /* PAGE INGRESAR */
-/* PAGE REGISTRARSE */
-/* PAGE NOSOTROS */
-/* PAGE CONTACTO */
-/* el asterico indica a todo el documento FORMATEO BASICO DE LA PAGINA WEB */
-/* ESTILOS NAVBAR / HEADER */
-#body {
-  max-width: 1920px;
-  background-color: white;
-}
-
-.container-fluid {
-  background-color: white;
-}
-
-.navbar-nav {
-  font-size: 25px;
-  color: black;
-  transition: 1s;
-}
-
-.navbar-nav :hover {
-  transition: 1s;
-  font-size: 30px;
-  color: rgb(64, 169, 255);
-}
-
-.navbar-brand {
-  transition: 1s;
-  object-fit: cover;
-}
-
-.navbar-brand :hover {
-  transition: 1s;
-  transform: scale(1.2);
-}
-
-.carousel-item img {
-  height: 100vh;
-}
-
-#main {
-  max-width: 100%;
-  min-height: 100vh; /* aca se le pide que se ajuste al 100 porciento visible, para separar el main del footer */
-  background-color: white;
-}
-
-.main__inicio__img-inicio {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-content: center;
-}
-
 /* ESTILO PARA INGRESAR */
-#formulario__ingresar {
-  display: flex;
-  width: 80%;
-  height: 60vh;
-  margin: 0 auto;
-  background-color: #ffffff;
-  border: none;
-  border-radius: 30px;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  gap: 70px;
-}
-
-.formulario__ingresar-empresa, .formulario__ingresar-estudiante {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  height: 100%;
-  padding: 20px;
-  justify-content: space-between;
-}
-
-.formulario__ingresar-estudiante input {
-  margin-left: 80px;
-  height: 35px;
-  border-radius: 7px;
-}
-
-.formulario__ingresar-empresa input {
-  margin-left: 80px;
-  height: 35px;
-  border-radius: 7px;
-}
-
-.formulario__btn-estudiante, .formulario__btn-empresa {
-  width: 80px;
-  height: 40px;
-  border-radius: 20px;
-  right: 20px;
-  bottom: 20px;
-}
-
-.formulario__ingresar-empresa {
-  display: flex;
-  background-color: hsl(206, 81%, 61%);
-  align-content: space-around;
-  transition: 0.5s;
-}
-
-.formulario__ingresar-empresa:hover {
-  transition: 0.5s;
-  background-color: hsl(206, 35%, 52%);
-}
-
-.formulario__ingresar-estudiante {
-  display: flex;
-  background-color: rgb(241, 241, 192);
-  transition: 0.5s;
-}
-
-.formulario__ingresar-estudiante:hover {
-  transition: 0.5s;
-  background-color: rgb(189, 189, 143);
-}
-
 .main__textobienvenida {
   text-align: center;
   font-size: 60px;
@@ -252,10 +181,68 @@ ul, li {
   color: rgb(54, 191, 255);
 }
 
-.formulario__texto-estudiante, .formulario__texto-empresa {
+#formulario__ingresar {
+  display: flex;
+  width: 80%;
+  height: 60vh;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: none;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+#formulario__ingresar .formulario__ingresar-empresa, #formulario__ingresar .formulario__ingresar-estudiante {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  padding: 20px;
+  justify-content: space-between;
+  border-radius: 30px;
+}
+#formulario__ingresar .formulario__ingresar-estudiante input {
+  margin-left: 80px;
+  height: 35px;
+  border-radius: 7px;
+}
+#formulario__ingresar .formulario__ingresar-empresa input {
+  margin-left: 80px;
+  height: 35px;
+  border-radius: 7px;
+}
+#formulario__ingresar .formulario__btn-estudiante, #formulario__ingresar .formulario__btn-empresa {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  right: 20px;
+  bottom: 20px;
+}
+#formulario__ingresar .formulario__ingresar-empresa {
+  display: flex;
+  background-color: hsl(206, 81%, 61%);
+  align-content: space-around;
+  transition: 0.5s;
+}
+#formulario__ingresar .formulario__ingresar-empresa:hover {
+  transition: 0.5s;
+  background-color: hsl(206, 35%, 52%);
+}
+#formulario__ingresar .formulario__ingresar-estudiante {
+  display: flex;
+  background-color: rgb(241, 241, 192);
+  transition: 0.5s;
+}
+#formulario__ingresar .formulario__ingresar-estudiante:hover {
+  transition: 0.5s;
+  background-color: rgb(189, 189, 143);
+}
+#formulario__ingresar .formulario__texto-estudiante, #formulario__ingresar .formulario__texto-empresa {
   text-align: center;
 }
 
+/* PAGE REGISTRARSE */
 /* ESTILO PARA PAGE REGISTRARSE */
 #main__formulario-ingresar {
   flex-direction: column;
@@ -270,45 +257,43 @@ ul, li {
   margin: 0 auto;
   text-transform: uppercase;
 }
-
-.formulario__texto {
-  font-size: 50px;
+#main__formulario-ingresar .formulario__texto {
+  font-size: 60px;
   letter-spacing: 5px;
   font-weight: bold;
+  transition: 2s;
 }
-
-.formulario__btn-empresayestudiante {
+#main__formulario-ingresar .formulario__texto :hover {
+  font-size: 80px;
+  transition: 2s;
+}
+#main__formulario-ingresar .formulario__btn-empresayestudiante {
   display: flex;
   flex-direction: row;
 }
-
-.formulario__btn-empresayestudiante button {
+#main__formulario-ingresar .formulario__btn-empresayestudiante button {
   font-size: 20px;
   padding: 15px 30px;
   border: none;
   border-radius: 30px;
   margin: 40px 80px;
 }
-
-.btn-estudiante button {
+#main__formulario-ingresar .btn-estudiante button {
   color: #FFFFFF;
   background-color: rgba(0, 116, 232, 0.9529411765);
 }
-
-.btn-estudiante button:hover {
+#main__formulario-ingresar .btn-estudiante button:hover {
   background-color: #FFFFFF;
   color: rgba(0, 116, 232, 0.9529411765);
   transition: 1s;
   font-size: 20px;
   font-weight: bold;
 }
-
-.btn-empresa button {
+#main__formulario-ingresar .btn-empresa button {
   color: #FFFFFF;
   background-color: rgba(76, 141, 103, 0.9529411765);
 }
-
-.btn-empresa button:hover {
+#main__formulario-ingresar .btn-empresa button:hover {
   background-color: #FFFFFF;
   color: rgba(76, 141, 103, 0.9529411765);
   transition: 1s;
@@ -316,8 +301,9 @@ ul, li {
   font-weight: bold;
 }
 
+/* PAGE NOSOTROS */
 /* ESTILO PAGE NOSOTROS */
-.main__titulo-nosotros, .main__imagen-nosotros, .main__texto-nosotros {
+.main__nosotros-titulo, .main__nosotros-imagen, .main__nosotros-texto {
   text-align: center;
   margin: 0 auto;
   width: 80%;
@@ -329,18 +315,19 @@ ul, li {
   border-radius: 10px;
 }
 
-.main__titulo-nosotros {
+.main__nosotros-titulo {
   font-size: 50px;
   letter-spacing: 5px;
   font-weight: bold;
   padding: 20px 1px 20px 1px;
 }
 
-.main__texto-nosotros {
+.main__nosotros-texto {
   font-size: 25px;
   padding: 10px 10px 10px 10px;
 }
 
+/* PAGE CONTACTO */
 /* ESTILO PARA PAGE CONTACTO */
 /* FORMULARIO CONTACTO */
 #form {

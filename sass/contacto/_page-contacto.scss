@@ -1,0 +1,89 @@
+/* ESTILO PARA PAGE CONTACTO */
+/* FORMULARIO CONTACTO */
+#form{
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(169, 202, 240);
+    border: none;
+    border-radius: 30px;
+    align-content:  center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ESTILOS DE RELLENO/CONTENIDO = INPUTS Y LABELS DEL FORM*/
+.form_contenido {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.form-contenido_relleno {
+    height: 100%;
+    padding: 20px 50px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    font-size: 18px;
+}
+
+.form-contenido_relleno input {
+    margin-left: 50px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+/*FORM CONTENIDO CAMPO TEXTAREA*/
+.form-contenido_relleno textarea {
+    resize: none;
+    height: 100px;
+    margin-left: 60px;
+    border-radius: 10px;
+
+}
+
+/*FORM CONTENIDO BTN ENVIAR*/
+.form-contenido_btnEnv {
+    width: 80px;
+    height: 45px;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/*ESTILOS DE RELLENO DE ÍCONOS*/
+.form_redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 30px;
+    font-size: 35px;
+}
+
+.texto_seguinos{
+    font-size: 35px;
+}
+
+.seccion_iconos{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+
+}
+.seccion_redes_mail{
+    padding: 20px ;
+}
+.seccion_redes_instagram{
+    padding: 20px;
+}
+.seccion_redes_whatsapp{
+    padding: 20px;
+}

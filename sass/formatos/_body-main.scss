@@ -1,0 +1,17 @@
+#body {
+    max-width: 1920px;
+    background-color: white;
+}
+
+#main{
+    max-width: 100%;
+    min-height: 100vh; /* aca se le pide que se ajuste al 100 porciento visible, para separar el main del footer */
+    background-color: white ;
+    .main__inicio__img-inicio{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-content: center;
+    }
+}
+

@@ -1,0 +1,58 @@
+/* ESTILO PARA PAGE REGISTRARSE */
+#main__formulario-ingresar{
+    flex-direction: column;
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    background-color: rgb(227, 227, 175);
+    border: none;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+
+    .formulario__texto{
+        font-size: 60px;
+        letter-spacing: 5px;
+        font-weight: bold;
+        transition: 2s;
+    }
+    .formulario__texto :hover{
+        font-size: 80px;
+        transition: 2s;
+    }
+    .formulario__btn-empresayestudiante{
+        display: flex;
+        flex-direction: row;
+    }
+    .formulario__btn-empresayestudiante button {
+        font-size: 20px;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 30px;
+        margin: 40px 80px;
+    }
+    .btn-estudiante button {
+        color: #FFFFFF;
+        background-color: #0074e8f3
+    }
+    .btn-estudiante button:hover{
+        background-color: #FFFFFF;
+        color: #0074e8f3;
+        transition: 1s;
+        font-size: 20px;
+        font-weight: bold
+    }
+    .btn-empresa button {
+        color: #FFFFFF;
+        background-color: #4c8d67f3
+    }
+    .btn-empresa button:hover{
+        background-color:#FFFFFF ;
+        color:#4c8d67f3 ;
+        transition: 1s;
+        font-size: 20px;
+        font-weight: bold
+    }
+}

@@ -7,7 +7,7 @@
     margin: 0 auto;
     background-color: rgb(169, 202, 240);
     border: none;
-    border-radius: 30px;
+    border-radius: $borde-externo;
     align-content:  center;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,7 @@
     margin-left: auto;
     margin-right: 50px;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: $borde-botones;
 }
 
 /*ESTILOS DE RELLENO DE ÍCONOS*/

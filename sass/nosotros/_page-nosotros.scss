@@ -8,16 +8,14 @@
     align-content: center;
     background-color: rgb(204, 236, 250);
     border: none;
-    border-radius: 10px;
+    border-radius: $borde-interno;
 }
-
 .main__nosotros-titulo{
     font-size: 50px;
     letter-spacing: 5px;
     font-weight: bold;
     padding: 20px 1px 20px 1px;
 }
-
 .main__nosotros-texto{
     font-size: 25px;
     padding: 10px 10px 10px 10px;

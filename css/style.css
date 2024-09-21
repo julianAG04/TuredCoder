@@ -200,7 +200,7 @@ ul, li {
   height: 100%;
   padding: 20px;
   justify-content: space-between;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 #formulario__ingresar .formulario__ingresar-estudiante input {
   margin-left: 80px;
@@ -275,7 +275,7 @@ ul, li {
   font-size: 20px;
   padding: 15px 30px;
   border: none;
-  border-radius: 30px;
+  border-radius: 10px;
   margin: 40px 80px;
 }
 #main__formulario-ingresar .btn-estudiante button {
@@ -312,7 +312,7 @@ ul, li {
   align-content: center;
   background-color: rgb(204, 236, 250);
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .main__nosotros-titulo {

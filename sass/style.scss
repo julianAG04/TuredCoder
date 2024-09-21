@@ -6,9 +6,12 @@
 @import "formatos/header";
 @import "formatos/body-main";
 @import "formatos/footer";
+@import "formatos/variables";
 
 /* PAGE INGRESAR */
+
 @import "ingresar/page-ingresar";
+
 
 /* PAGE REGISTRARSE */
 @import "registrarse/page-registrarse";
@@ -19,10 +22,8 @@
 /* PAGE CONTACTO */
 @import "contacto/page-contacto";
 
+@import "formatos/variables"
 
-$borde-externo:border-radius 20px;
-$borde-interno:border-radius 10px;
-$borde-botones:border-radius 7px;
 
 
 

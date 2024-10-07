@@ -3,7 +3,7 @@
     flex-direction: column;
     display: flex;
     width: 80%;
-    height: 100vh;
+    height: 50%;
     background-color: rgb(227, 227, 175);
     border: none;
     border-radius: $borde-externo;
@@ -12,11 +12,11 @@
     margin: 0 auto;
     text-transform: uppercase;
 
-    .formulario__texto{
+    h1{
         font-size: 60px;
         letter-spacing: 5px;
-        font-weight: bold;
         transition: 2s;
+        font-weight: bold;
     }
     .formulario__texto :hover{
         font-size: 80px;
@@ -56,3 +56,36 @@
         font-weight: bold
     }
 }
+
+.main_imagenes-registrarse{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto; 
+    padding: 15px;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 90%;
+    background-color: rgb(165, 165, 108);
+    border-radius: $borde-externo;
+    .primero{
+        width: 350px;
+        height: 250px;
+        background-color:  rgb(165, 165, 108);
+        justify-content: center;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: $borde-interno;
+        }
+        h2{
+            font-weight: bold;
+            text-align: center;
+        }
+        i{
+            font-size: 18px;
+        }
+    }
+}
+
+

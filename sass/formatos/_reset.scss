@@ -4,11 +4,16 @@
     box-sizing: border-box;
     font-style: none;
     text-decoration: none;
-    font-family:  "Quicksand", sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 ul, li {
     list-style: none;
     display: inline-block;
     /* padding: 15px 30px; */
+}
+a{
+    color: #2e2eb8;
+    text-decoration: underline;
+
 }
 

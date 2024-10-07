@@ -1,12 +1,10 @@
-/* ESTILO PARA INGRESAR */
 .main__textobienvenida{
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     letter-spacing: 2px;
     font-weight: bold;
     align-content:  space-evenly;
     text-align: center;
-    justify-content: center;
     margin-top: 70px;
     margin-bottom: 70px;
     transition: 2s;
@@ -15,67 +13,63 @@
 .main__textobienvenida:hover{
     transition: 2s;
     font-size: 80px;
-    color: rgb(54, 191, 255);
+    font-weight: bold;
+    color: #0033cc;
 }
-
 #formulario__ingresar{
     display: flex;
     width: 80%;
-    height: 60vh;
-    margin: 0 auto;
+    height: 80vh;
+    margin: auto;
     background-color: #ffffff;
     border: none;
     align-content:  center;
     justify-content: center;
     align-items: center;
     gap: 70px;
-
-    .formulario__ingresar-empresa , .formulario__ingresar-estudiante{
+    label{
+        font-size: 25px; 
+    }
+    input{
+        margin-left: 90px;
+        height: 45px;
+        border-radius: 7px;
+    }
+    h1{
+        text-align: center;
+        font-weight: bold;
+    }
+}
+.formulario__ingresar-empresa , .formulario__ingresar-estudiante{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 600px;
     height: 100%;
     padding: 20px;
+    border-radius: $borde-interno;
     justify-content: space-between;
-    border-radius:$borde-interno;
-    }
-    .formulario__ingresar-estudiante input{
-        margin-left: 80px;
-        height: 35px;
-        border-radius: 7px;
-    }
-    .formulario__ingresar-empresa input{
-        margin-left: 80px;
-        height: 35px;
-        border-radius: 7px;
-    }
-    .formulario__btn-estudiante , .formulario__btn-empresa  {
-        width: 80px;
-        height: 40px;
-        border-radius: 20px;
-        right: 20px;
-        bottom: 20px;
-    }
-    .formulario__ingresar-empresa{
-        display: flex;
-        background-color: hsl(206, 81%, 61%);
-        align-content: space-around;
-        transition: 0.5s;
-    }
-    .formulario__ingresar-empresa:hover{
-        transition: 0.5s;
-        background-color:hsl(206, 35%, 52%); ;
-    }
-    .formulario__ingresar-estudiante{
-        display: flex;
-        background-color: rgb(241, 241, 192);
-        transition: 0.5s;
-    }
-    .formulario__ingresar-estudiante:hover{
-        transition: 0.5s;
-        background-color: rgb(189, 189, 143);
-    }
-    .formulario__texto-estudiante , .formulario__texto-empresa {
-        text-align: center;
-    }
+}
+.formulario__btn-estudiante , .formulario__btn-empresa  {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    right: 20px;
+    bottom: 20px;
+}
+.formulario__ingresar-empresa {
+    background-color: hsl(206, 81%, 61%);
+    transition: background-color 0.5s;
+}
+
+.formulario__ingresar-empresa:hover {
+    background-color: hsl(206, 35%, 52%);
+}
+
+.formulario__ingresar-estudiante {
+    background-color: rgb(241, 241, 192);
+    transition: background-color 0.5s;
+}
+
+.formulario__ingresar-estudiante:hover {
+    background-color: rgb(189, 189, 143);
 }

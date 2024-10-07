@@ -15,7 +15,72 @@ ul, li {
   /* padding: 15px 30px; */
 }
 
+a {
+  color: #2e2eb8;
+  text-decoration: underline;
+}
+
+/* 
+X-Small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px */
+@media screen and (max-width: 768px) {
+  /* configuración pagina contacto */
+  #form {
+    width: 100%;
+  }
+  .form-contenido_relleno input, .form-contenido_relleno textarea {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  .form_redes {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .texto_seguinos {
+    text-align: center;
+    font-size: 5px;
+  }
+}
 @media screen and (max-width: 576px) {
+  /* pagina ingresar */
+  #formulario__ingresar {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  .formulario__ingresar-estudiante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  .formulario__ingresar-empresa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  /* pagina registrarse */
+  .main__formulario-ingresa {
+    display: flex;
+    justify-content: center;
+  }
+  .btn-estudiante {
+    flex-direction: column;
+    margin-left: auto;
+  }
+  .btn-empresa {
+    flex-direction: column;
+    margin-right: auto;
+  }
   #footer {
     flex-direction: column;
   }
@@ -68,14 +133,14 @@ ul, li {
 /* estilos HTML */
 /* ESTILOS NAVBAR / HEADER */
 .navbar-nav {
-  font-size: 25px;
+  font-size: 35px;
   color: black;
   transition: 1s;
 }
 
 .navbar-nav :hover {
   transition: 1s;
-  font-size: 30px;
+  font-size: 40px;
   color: rgb(64, 169, 255);
 }
 
@@ -107,12 +172,6 @@ ul, li {
   min-height: 100vh; /* aca se le pide que se ajuste al 100 porciento visible, para separar el main del footer */
   background-color: white;
 }
-#main .main__inicio__img-inicio {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-content: center;
-}
 
 /* ESTILOS FOOTER */
 #footer {
@@ -131,7 +190,7 @@ ul, li {
 }
 
 .footer__redes :hover {
-  filter: drop-shadow(10px 10px 6px rgb(200, 135, 207));
+  filter: drop-shadow(10px 10px 6px #8c1aff);
   transition: 1s;
 }
 
@@ -144,7 +203,6 @@ ul, li {
 
 .footer__redes-gmail, .footer__redes-insta {
   font-size: 30px;
-  display: flex;
   align-content: center;
   margin-top: 10px;
 }
@@ -160,15 +218,13 @@ ul, li {
 }
 
 /* PAGE INGRESAR */
-/* ESTILO PARA INGRESAR */
 .main__textobienvenida {
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
   letter-spacing: 2px;
   font-weight: bold;
   align-content: space-evenly;
   text-align: center;
-  justify-content: center;
   margin-top: 70px;
   margin-bottom: 70px;
   transition: 2s;
@@ -178,14 +234,15 @@ ul, li {
 .main__textobienvenida:hover {
   transition: 2s;
   font-size: 80px;
-  color: rgb(54, 191, 255);
+  font-weight: bold;
+  color: #0033cc;
 }
 
 #formulario__ingresar {
   display: flex;
   width: 80%;
-  height: 60vh;
-  margin: 0 auto;
+  height: 80vh;
+  margin: auto;
   background-color: #ffffff;
   border: none;
   align-content: center;
@@ -193,53 +250,53 @@ ul, li {
   align-items: center;
   gap: 70px;
 }
-#formulario__ingresar .formulario__ingresar-empresa, #formulario__ingresar .formulario__ingresar-estudiante {
+#formulario__ingresar label {
+  font-size: 25px;
+}
+#formulario__ingresar input {
+  margin-left: 90px;
+  height: 45px;
+  border-radius: 7px;
+}
+#formulario__ingresar h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.formulario__ingresar-empresa, .formulario__ingresar-estudiante {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 600px;
   height: 100%;
   padding: 20px;
-  justify-content: space-between;
   border-radius: 20px;
+  justify-content: space-between;
 }
-#formulario__ingresar .formulario__ingresar-estudiante input {
-  margin-left: 80px;
-  height: 35px;
-  border-radius: 7px;
-}
-#formulario__ingresar .formulario__ingresar-empresa input {
-  margin-left: 80px;
-  height: 35px;
-  border-radius: 7px;
-}
-#formulario__ingresar .formulario__btn-estudiante, #formulario__ingresar .formulario__btn-empresa {
+
+.formulario__btn-estudiante, .formulario__btn-empresa {
   width: 80px;
   height: 40px;
   border-radius: 20px;
   right: 20px;
   bottom: 20px;
 }
-#formulario__ingresar .formulario__ingresar-empresa {
-  display: flex;
+
+.formulario__ingresar-empresa {
   background-color: hsl(206, 81%, 61%);
-  align-content: space-around;
-  transition: 0.5s;
+  transition: background-color 0.5s;
 }
-#formulario__ingresar .formulario__ingresar-empresa:hover {
-  transition: 0.5s;
+
+.formulario__ingresar-empresa:hover {
   background-color: hsl(206, 35%, 52%);
 }
-#formulario__ingresar .formulario__ingresar-estudiante {
-  display: flex;
+
+.formulario__ingresar-estudiante {
   background-color: rgb(241, 241, 192);
-  transition: 0.5s;
+  transition: background-color 0.5s;
 }
-#formulario__ingresar .formulario__ingresar-estudiante:hover {
-  transition: 0.5s;
+
+.formulario__ingresar-estudiante:hover {
   background-color: rgb(189, 189, 143);
-}
-#formulario__ingresar .formulario__texto-estudiante, #formulario__ingresar .formulario__texto-empresa {
-  text-align: center;
 }
 
 /* PAGE REGISTRARSE */
@@ -248,7 +305,7 @@ ul, li {
   flex-direction: column;
   display: flex;
   width: 80%;
-  height: 100vh;
+  height: 50%;
   background-color: rgb(227, 227, 175);
   border: none;
   border-radius: 30px;
@@ -257,11 +314,11 @@ ul, li {
   margin: 0 auto;
   text-transform: uppercase;
 }
-#main__formulario-ingresar .formulario__texto {
+#main__formulario-ingresar h1 {
   font-size: 60px;
   letter-spacing: 5px;
-  font-weight: bold;
   transition: 2s;
+  font-weight: bold;
 }
 #main__formulario-ingresar .formulario__texto :hover {
   font-size: 80px;
@@ -301,6 +358,37 @@ ul, li {
   font-weight: bold;
 }
 
+.main_imagenes-registrarse {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 15px;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 90%;
+  background-color: rgb(165, 165, 108);
+  border-radius: 30px;
+}
+.main_imagenes-registrarse .primero {
+  width: 350px;
+  height: 250px;
+  background-color: rgb(165, 165, 108);
+  justify-content: center;
+}
+.main_imagenes-registrarse .primero img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.main_imagenes-registrarse .primero h2 {
+  font-weight: bold;
+  text-align: center;
+}
+.main_imagenes-registrarse .primero i {
+  font-size: 18px;
+}
+
 /* PAGE NOSOTROS */
 /* ESTILO PAGE NOSOTROS */
 .main__nosotros-titulo, .main__nosotros-imagen, .main__nosotros-texto {
@@ -335,12 +423,26 @@ ul, li {
   width: 80%;
   height: 100vh;
   margin: 0 auto;
-  background-color: rgb(169, 202, 240);
   border: none;
   border-radius: 30px;
   align-content: center;
   justify-content: center;
   align-items: center;
+}
+#form a {
+  color: aquamarine;
+}
+#form label {
+  font-size: 25px;
+}
+
+#form {
+  background-color: rgb(92, 169, 156);
+}
+
+#form:hover {
+  background-color: rgb(41, 125, 111);
+  transition: background-color 0.5s;
 }
 
 /*ESTILOS DE RELLENO/CONTENIDO = INPUTS Y LABELS DEL FORM*/
@@ -350,8 +452,7 @@ ul, li {
   width: 50%;
   height: 100%;
 }
-
-.form-contenido_relleno {
+.form_contenido .form-contenido_relleno {
   height: 100%;
   padding: 20px 50px 20px 50px;
   display: flex;
@@ -360,15 +461,12 @@ ul, li {
   align-content: space-around;
   font-size: 18px;
 }
-
-.form-contenido_relleno input {
+.form_contenido .form-contenido_relleno input {
   margin-left: 50px;
   height: 55px;
   border-radius: 10px;
 }
-
-/*FORM CONTENIDO CAMPO TEXTAREA*/
-.form-contenido_relleno textarea {
+.form_contenido .form-contenido_relleno textarea {
   resize: none;
   height: 100px;
   margin-left: 60px;
@@ -395,28 +493,60 @@ ul, li {
   gap: 30px;
   font-size: 35px;
 }
-
-.texto_seguinos {
+.form_redes .texto_seguinos {
   font-size: 35px;
 }
-
-.seccion_iconos {
+.form_redes .seccion_iconos {
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: space-between;
 }
-
-.seccion_redes_mail {
+.form_redes .seccion_redes_mail {
   padding: 20px;
+  font-size: 40px;
+  transition: 2s;
+}
+.form_redes .seccion_redes_instagram {
+  padding: 20px;
+  font-size: 40px;
+  transition: 2s;
+}
+.form_redes .seccion_redes_whatsapp {
+  padding: 20px;
+  font-size: 40px;
+  transition: 2s;
 }
 
-.seccion_redes_instagram {
-  padding: 20px;
+.seccion_redes_mail:hover {
+  font-size: 50px;
+  transition: 2s;
 }
 
-.seccion_redes_whatsapp {
-  padding: 20px;
+.seccion_redes_instagram:hover {
+  font-size: 50px;
+  transition: 2s;
+}
+
+.seccion_redes_whatsapp:hover {
+  font-size: 50px;
+  transition: 2s;
+}
+
+.texto_seguinos {
+  font-size: 40px;
+}
+
+.texto_seguinos:hover {
+  transition: 2s;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* PAGE INICIO */
+.carousel-inner {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

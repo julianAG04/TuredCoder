@@ -12,6 +12,7 @@ ul, li {
     display: inline-block;
     /* padding: 15px 30px; */
 }
+
 /* ESTILOS NAVBAR / HEADER */
 #body {
     max-width: 1920px;

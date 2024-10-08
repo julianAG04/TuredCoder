@@ -133,14 +133,14 @@ Extra extra large	xxl	≥1400px */
 /* estilos HTML */
 /* ESTILOS NAVBAR / HEADER */
 .navbar-nav {
-  font-size: 35px;
+  font-size: 25px;
   color: black;
   transition: 1s;
 }
 
 .navbar-nav :hover {
   transition: 1s;
-  font-size: 40px;
+  font-size: 30px;
   color: rgb(64, 169, 255);
 }
 
@@ -534,12 +534,12 @@ Extra extra large	xxl	≥1400px */
 }
 
 .texto_seguinos {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .texto_seguinos:hover {
   transition: 2s;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
 }
 
